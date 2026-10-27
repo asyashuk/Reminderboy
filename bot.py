@@ -75,7 +75,7 @@ def handle_all_messages(message):
       if "через" in text_lower:
         parts = text.split("через")
         topic_part = parts[0].replace("Нагадай, щоб", "").replace("нагадай", "")
-        time_part = parts[1].strip()   наприклад "5 хв" або "1 година"
+        time_part = parts[1].strip()  # наприклад "5 хв" або "1 година"
 
         # Витягуємо число і одиницю виміру
         time_nums = "".join(filter(str.isdigit, time_part))
