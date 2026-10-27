@@ -6,7 +6,7 @@ import telebot
 from apscheduler.schedulers.background import BackgroundScheduler
 
 # Отримуємо токен з змінних середовища Render
-TOKEN = os.environ.get("8727485507:AAEV2YL1giD4La9Jwc3PtvXocuDCjsK9dN0")
+TOKEN = os.environ.get("BOT_TOKEN")
 bot = telebot.TeleBot(TOKEN)
 
 # Словник для відстеження стану діалогу (наприклад, чи чекаємо ми на текст нагадування після "так")
